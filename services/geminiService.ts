@@ -55,8 +55,8 @@ export const generateThumbnail = async (
 ): Promise<string> => {
   try {
     const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-    // Using gemini-2.5-flash-image for generation
-    const model = "gemini-2.5-flash-image";
+    // Using gemini-1.5-pro for generation (stable model)
+    const model = "gemini-1.5-pro";
     
     // -------------------------------------------------------------------------
     // PROMPT 1: NORMAL MODE
