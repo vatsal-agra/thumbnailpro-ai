@@ -111,7 +111,7 @@ rules to follow:
   -IT SHOULD SHOW THE OPPOSITE SIGNAL OF WHAT IT MEANS SO THAT AN INTERESTED BUYER MIGHT THINK TO WATCH THIS VIDEO THINKING THAT HE IS MAKING A MISTAKE BUYING THAT PRODUCT
   -REMEBER CLICKBAITTTTT
   -EVEN THE IMAGES YOU CREATE SHOULD SOMEHOW INDICATE THE USER THAT THEY ARE MAKING A MISTAKE IN MAKING OR BUYING WHATEVER THE MAIN PRODUCT IS IN THAT VIDEO
-      
+    
     `;
 
     // Select the prompt based on mode
@@ -184,7 +184,7 @@ export const editThumbnail = async (
 ): Promise<string> => {
   try {
     const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-    const model = "gemini-1.5-pro";
+    const model = "gemini-2.5-flash-image";
 
     const cleanBase64 = currentImageBase64.replace(/^data:image\/\w+;base64,/, "");
 
