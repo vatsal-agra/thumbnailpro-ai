@@ -1,0 +1,5 @@
+{
+  "name": "ThumbnailPro AI",
+  "description": "An expert-level YouTube thumbnail generator using Gemini 3 Pro for video analysis and Gemini 2.5 Flash for image editing.",
+  "requestFramePermissions": []
+}
