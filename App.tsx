@@ -39,7 +39,7 @@ const App = () => {
   // Payment States
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
 
-  const [hasUsedFree, setHasUsedFree] = useState(false); // Reset to false for unlimited testing
+  const [hasUsedFree] = useState(false); // Reset to false for unlimited testing
 
   const [pendingConfig, setPendingConfig] = useState<GenerationConfig | null>(null);
 

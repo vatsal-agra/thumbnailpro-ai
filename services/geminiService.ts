@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { fileToBase64, extractYoutubeId } from "../utils";
+import { extractYoutubeId } from "../utils";
 import { ThumbnailMode } from "../types";
 
 export const analyzeVideo = async (videoUrl: string, additionalContext: string): Promise<string> => {
