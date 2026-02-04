@@ -22,3 +22,16 @@ export interface Message {
   role: 'user' | 'model';
   text: string;
 }
+
+export interface HistoryItem {
+  id: string;
+  title: string;
+  date: string;
+  summary: string;
+  images: {
+    NORMAL: string;
+    CLICKBAIT: string;
+    NORMAL_VERTICAL: string;
+    CLICKBAIT_VERTICAL: string;
+  };
+}

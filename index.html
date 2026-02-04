@@ -1,32 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ThumbnailPro AI</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body {
-        background-color: #0f0f0f;
-        color: #ffffff;
+
+<head>
+  <!-- Google AdSense Script Placeholder -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThumbnailPro AI | High-CTR Professional Thumbnails</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            outfit: ['Outfit', 'sans-serif'],
+          },
+        }
       }
-      /* Custom scrollbar for a sleeker look */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
+    }
+  </script>
+  <style>
+    :root {
+      --fb-red: #ff0000;
+      --accent-red: #dc2626;
+    }
+
+    body {
+      background-color: #050505;
+      color: #ffffff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Smooth transitions */
+    * {
+      transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0a0a0a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #222;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #333;
+    }
+
+    /* Glassmorphism */
+    .glass {
+      background: rgba(15, 15, 15, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Animations */
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
       }
-      ::-webkit-scrollbar-track {
-        background: #1f1f1f; 
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      ::-webkit-scrollbar-thumb {
-        background: #3f3f3f; 
-        border-radius: 4px;
+    }
+
+    .animate-fade-in {
+      animation: fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes glow {
+
+      0%,
+      100% {
+        filter: drop-shadow(0 0 5px rgba(220, 38, 38, 0.3));
       }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
+
+      50% {
+        filter: drop-shadow(0 0 15px rgba(220, 38, 38, 0.6));
       }
-    </style>
-<script type="importmap">
+    }
+
+    .animate-glow {
+      animation: glow 3s ease-in-out infinite;
+    }
+
+    .vertical-text {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+
+    /* Selection color */
+    ::selection {
+      background-color: #dc2626;
+      color: white;
+    }
+  </style>
+  <script type="importmap">
 {
   "imports": {
     "vite": "https://esm.sh/vite@^7.3.1",
@@ -40,8 +129,10 @@
 }
 </script>
 </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>
