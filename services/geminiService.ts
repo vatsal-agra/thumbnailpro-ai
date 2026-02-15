@@ -4,7 +4,7 @@ import { ThumbnailMode } from "../types";
 
 export const analyzeVideo = async (videoUrl: string, additionalContext: string): Promise<string> => {
   try {
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
     const model = "gemini-3-flash-preview";
 
     const videoId = extractYoutubeId(videoUrl);
@@ -55,7 +55,7 @@ export const generateThumbnail = async (
   aspectRatio: '16:9' | '9:16' = '16:9'
 ): Promise<string> => {
   try {
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
     // Using gemini-2.5-flash-image for generation
     const model = "gemini-2.5-flash-image";
 
@@ -183,7 +183,7 @@ export const editThumbnail = async (
   aspectRatio: '16:9' | '9:16' = '16:9'
 ): Promise<string> => {
   try {
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
     const model = "gemini-2.5-flash-image";
 
     const cleanBase64 = currentImageBase64.replace(/^data:image\/\w+;base64,/, "");
@@ -252,7 +252,7 @@ export const generateVerticalFromHorizontal = async (
   mode: ThumbnailMode = 'NORMAL'
 ): Promise<string> => {
   try {
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
     const model = "gemini-2.5-flash-image";
 
     const prompt = `
