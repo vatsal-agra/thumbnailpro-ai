@@ -23,7 +23,7 @@ Since Netlify doesn't have access to your local `.env` file, you need to add the
 4. **Click "Add a variable"**
 5. **Add the following:**
    - **Key**: `VITE_API_KEY`
-   - **Value**: `AIzaSyAwzKPgd7LSypHq1980cf01B5mUYQlOWPM`
+   - **Value**: `YOUR_GEMINI_API_KEY_HERE`
 6. **Save the variable**
 7. **Trigger a new deployment** (or push your code changes to GitHub)
 
@@ -32,7 +32,7 @@ Since Netlify doesn't have access to your local `.env` file, you need to add the
 If you prefer using the command line:
 
 ```bash
-netlify env:set VITE_API_KEY AIzaSyAwzKPgd7LSypHq1980cf01B5mUYQlOWPM
+netlify env:set VITE_API_KEY YOUR_GEMINI_API_KEY_HERE
 ```
 
 ## 🔒 Security Note
