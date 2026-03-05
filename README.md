@@ -4,8 +4,6 @@
 
 ThumbnailPro AI is a professional-grade SaaS application that leverages Google's state-of-the-art **Gemini Vision** models to analyze video content and generate high-converting thumbnails in seconds.
 
-![Project Preview](https://cdn-icons-png.flaticon.com/512/1055/1055666.png)
-
 ---
 
 ## ✨ Key Features
@@ -81,5 +79,6 @@ The app includes built-in integrations for:
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-
-**Built with ❤️ for Content Creators.**
+- **Author**: Vatsal Agrawal
+- **GitHub**: github.com/vatsal-agra
+- **LinkedIn**: linkedin.com/in/vatsal-agrawal-a7a9641b0
